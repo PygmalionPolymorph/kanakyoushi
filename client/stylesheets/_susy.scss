@@ -1,29 +1,4 @@
-$susy: (
-  columns: 12,
-  gutters: .2,
-  gutter-position: split,
-  math: fluid,
-  output: float,
-  flow: ltr,
+// Susy
+// ====
 
-  container: auto,
-  container-position: center,
-  last-flow: to,
-  global-box-sizing: border-box,
-
-  // Used for debugging
-  debug: (
-
-    // show or hide grid images
-    // image: show,
-
-    // Color of generated grid image
-    // color: rgba(#656, .25),
-
-    // Show debug image as a background or overlay
-    // output: background,
-
-    // Position of toggle to show and hide overlay option
-    // toggle: top right,
-  )
-);
+@import 'susy/language/susy';
