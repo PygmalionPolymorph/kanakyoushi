@@ -1,0 +1,55 @@
+<template name="statistics">
+    <div class="tabs">
+      <span class="openHiragana active">Hiragana</span>
+      <span class="openKatakana">Katakana</span>
+      <span class="closeModal">&#215;</span>
+    </div>
+    <div class="hiragana">
+      <div class="basic">
+        {{#each basic}}
+          {{>hiragana}}
+        {{/each}}
+      </div>
+      <div class="dakuten">
+        {{#each dakuten}}
+          {{>hiragana}}
+        {{/each}}
+      </div>
+      <div class="composite">
+        {{#each composite}}
+          {{>hiragana}}
+        {{/each}}
+      </div>
+    </div>
+    <div class="katakana">
+      <div class="basic">
+        {{#each basic}}
+          {{>katakana}}
+        {{/each}}
+      </div>
+      <div class="dakuten">
+        {{#each dakuten}}
+          {{>katakana}}
+        {{/each}}
+      </div>
+      <div class="composite">
+        {{#each composite}}
+          {{>katakana}}
+        {{/each}}
+      </div>
+    </div>
+</template>
+
+<template name="hiragana">
+  <div class="kana {{special}}">
+    <span class="symbol">{{kana}}</span>
+    <span class="percentage">{{percentage}}%</span>
+  </div>
+</template>
+
+<template name="katakana">
+  <div class="kana {{special}}">
+    <span class="symbol">{{kana}}</span>
+    <span class="percentage">{{percentage}}%</span>
+  </div>
+</template>

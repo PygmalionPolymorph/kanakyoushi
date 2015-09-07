@@ -1,0 +1,78 @@
+.katakana  {
+  display: none;
+}
+
+.tabs {
+  display: flex;
+}
+
+.openHiragana, .openKatakana {
+  display: inline-block;
+  width: 47.5%;
+  text-align: center;
+  padding: 10px;
+  background-color: #ddd;
+  transition: .2s background ease;
+
+  &:hover {
+    background-color: #e6e6e6;
+    cursor: pointer;
+  }
+
+  &.active {
+    background-color: #eee;
+  }
+}
+
+.closeModal {
+  width: 5%;
+  font-size: 32px;
+  text-align: center;
+  background-color: #dedede;
+  transition: .2s all ease;
+
+  &:hover {
+    color: #999;
+    background-color: #e6e6e6;
+    cursor: pointer;
+  }
+}
+
+.hiragana, .katakana {
+  @include container;
+  padding: 10px;
+  overflow-y: scroll;
+  height: 92.8%;
+
+  & > div {
+    @include container;
+    @include span(4);
+  }
+}
+
+.kana {
+  @include span(1 of 5);
+  text-align: center;
+}
+
+.yu {
+  @include span(3 of 5);
+}
+
+.yo {
+  @include span(1 of 5 at 5);
+}
+
+.wo {
+  @include span(1 of 5 at 5);
+}
+
+.n {
+  @include span(1 of 1);
+}
+
+
+.symbol {
+  font-size:30px;
+  display:block;
+}
