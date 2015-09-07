@@ -3,6 +3,12 @@
     {{> yield "modal"}}
   </section>
   <section class="head">
+    <div class="headControls">
+      <button class="home"><img src="/home.svg" /></button>
+      <button class="openStatistics"><img src="/statistics.svg" /></button>
+      <button class="logout"><img src="/signout.svg" /></button>
+
+    </div>
     <div class="feedback">
 
     </div>
@@ -12,7 +18,6 @@
 
 <template name="foot">
   <section class="foot">
-    {{>controls}}
   </section>
 </template>
 
@@ -22,16 +27,7 @@
   </section>
 </template>
 
-<template name="controls">
-  <div class="globalControls">
-    <button class="openStatistics">Statistics</button>
-  </div>
-</template>
-
 <template name="controlsKana">
-  <div class="globalControls">
-    <button class="openStatistics">Statistics</button>
-  </div>
   <div class="modeControls">
     <button class="start">はじめなさい</button>
   </div>

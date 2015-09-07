@@ -5,11 +5,9 @@
 # but you can also edit it by hand.
 
 meteor-platform
-insecure
 meta:susy
 fourseven:scss
 iron:router
 accounts-ui
 accounts-password
 useraccounts:unstyled
-autopublish

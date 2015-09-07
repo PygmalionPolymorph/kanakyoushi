@@ -12,12 +12,49 @@
   text-align: center;
 }
 
+.headControls {
+  height: inherit;
+  width: 25%;
+  position: fixed;
+  left:0;
+  top: 0;
+
+  .home {
+    margin-left: 10px;
+  }
+}
+
 .globalControls {
   width: 25%;
   position: fixed;
   bottom: 0;
   left: 0;
   height: inherit;
+}
+
+.floatRight {
+  position: absolute;
+  right: 0;
+}
+
+.at-form {
+  text-align: center;
+  padding: 10px;
+
+  #at-btn {
+    margin-top:10px;
+  }
+
+  #at-signUp {
+    display: block;
+    text-decoration: none;
+    font-size:105%;
+    color: #333;
+    font-family: sans-serif;
+    &:hover {
+      color: #666;
+    }
+  }
 }
 
 button {
@@ -31,6 +68,10 @@ button {
   display: inline-block;
   height: 60%;
   top: 15%;
+}
+
+button img {
+  height: 60%;
 }
 
 button:hover {

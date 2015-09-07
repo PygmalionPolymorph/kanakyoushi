@@ -23,3 +23,12 @@ Router.route('/statistics', function () {
     to: 'modal'
   });
 });
+
+Router.route('/login', function () {
+  if ($('.modal').length == 0) {
+    Router.go('/');
+  }
+  this.render('login', {
+    to: 'modal'
+  });
+});
