@@ -5,7 +5,7 @@ var statistics = Helpers.readStatisticsFromDB();
 
 Template.kana.events({
   'keyup input': function(event) {
-    if(event.target.className.includes('answer') && event.which == 13) {
+    if (event.target.className.includes('answer') && event.which == 13) {
       quiz.handleAnswer();
     };
   }
@@ -42,13 +42,19 @@ Template.controlsKana.events({
 
 Template.statistics.helpers({
   'basic': function() {
-    return Symbols.find({type: 'basic'}).fetch();
+    return Symbols.find({
+      type: 'basic'
+    }).fetch();
   },
   'dakuten': function() {
-    return Symbols.find({type: 'dakuten'}).fetch();
+    return Symbols.find({
+      type: 'dakuten'
+    }).fetch();
   },
   'composite': function() {
-    return Symbols.find({type: 'composite'}).fetch();
+    return Symbols.find({
+      type: 'composite'
+    }).fetch();
   }
 });
 
@@ -65,14 +71,14 @@ Template.statistics.events({
     $('.hiragana').hide();
     $('.katakana').show();
   },
-  'click .closeModal':function() {
+  'click .closeModal': function() {
     Helpers.closeModal();
     window.history.back();
   }
 });
 
 Template.login.events({
-  'click .closeModal':function() {
+  'click .closeModal': function() {
     Helpers.closeModal();
     window.history.back();
   }

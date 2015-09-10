@@ -3,48 +3,45 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-html, body {
-    height: 100%;
-    margin: 0;
-    position: relative;
-    background-color: #fafafa;
-    color: #333;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  position: relative;
+  background-color: #fafafa;
+  color: #333;
 }
-
-.head, .foot, .content {
+.head,
+.foot,
+.content {
   position: fixed;
-  left:0;
+  left: 0;
   width: 100%;
 }
-
-.head, .foot {
-  background-color: #FF916D;
+.head,
+.foot {
+  background-color: #ff916d;
   height: 10vh;
 }
-
 .content {
   height: 80vh;
-  top:10vh;
+  top: 10vh;
 }
-
 .head {
-  top:0;
+  top: 0;
 }
-
 .foot {
   bottom: 0;
-  box-shadow: 0px 0px 24px -3px rgb(238, 238, 238);
+  box-shadow: 0 0 24px -3px rgb(238, 238, 238);
 }
-
 .modal {
   top: -200%;
-  transition: .5s all ease;
+  transition: 0.5s all ease;
   background-color: #eee;
   width: 94%;
   height: 94%;
   left: 3%;
   position: absolute;
-  z-index:10;
+  z-index: 10;
   box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.2);
 }

@@ -1,21 +1,18 @@
-Router.route('/', function () {
-  this.render('home', {
-  });
+Router.route('/', function() {
+  this.render('home', {});
 });
 
-Router.route('/hiragana', function () {
+Router.route('/hiragana', function() {
   mode = "hiragana";
-  this.render('kana', {
-  });
+  this.render('kana', {});
 });
 
-Router.route('/katakana', function () {
+Router.route('/katakana', function() {
   mode = "katakana";
-  this.render('kana', {
-  });
+  this.render('kana', {});
 });
 
-Router.route('/statistics', function () {
+Router.route('/statistics', function() {
   if ($('.modal').length == 0) {
     Router.go('/');
   }
@@ -24,7 +21,7 @@ Router.route('/statistics', function () {
   });
 });
 
-Router.route('/login', function () {
+Router.route('/login', function() {
   if ($('.modal').length == 0) {
     Router.go('/');
   }

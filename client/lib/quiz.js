@@ -31,7 +31,7 @@ Quiz = function(mode) {
 
   var prepareRound = function() {
     var array = Symbols.find().fetch();
-    var randomIndex = Math.floor( Math.random() * array.length );
+    var randomIndex = Math.floor(Math.random() * array.length);
     choice = array[randomIndex];
     blitCharacter(choice[mode]);
 
@@ -44,7 +44,7 @@ Quiz = function(mode) {
     if (answer.toLowerCase() == choice["romaji"]) {
       return true;
     } else if (choice.hasOwnProperty("alternatives")) {
-      for (var i=0; i<choice["alternatives"].length;i++) {
+      for (var i = 0; i < choice["alternatives"].length; i++) {
         if (answer == choice["alternatives"][i]) {
           return true;
         }

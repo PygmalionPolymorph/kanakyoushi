@@ -2,12 +2,11 @@
   font-size: 70vh;
   cursor: default;
   text-align: center;
-  transition: opacity .5s ease;
+  transition: opacity 0.5s ease;
   height: 100%;
 }
 
 /* FEEDBACK */
-
 .feedback {
   width: 100%;
   text-align: center;
@@ -16,22 +15,18 @@
   flex-flow: column;
   align-content: space-around;
   justify-content: space-around;
-
   span {
     display: block;
-
     &:first-child {
       font-size: 130%;
     }
   }
 }
-
 .correct {
-  color: #0A7C36;
+  color: #0a7c36;
   opacity: 0;
 }
-
 .incorrect {
-  color: #EE1136;
+  color: #ee1136;
   opacity: 0;
 }
