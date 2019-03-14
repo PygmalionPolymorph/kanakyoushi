@@ -1,5 +1,5 @@
-# かな教室
-## Kanakyoushi - The Kana Classroom
+# かな教師
+## Kanakyoushi - The Kana Teacher
 
 Kanakyoushi is a small webapp to practice the japanese [Kana](https://en.wikipedia.org/wiki/Kana "Wiki") alphabets.
 You can check it out [here](http://kanakyoushi.herokuapp.com)
